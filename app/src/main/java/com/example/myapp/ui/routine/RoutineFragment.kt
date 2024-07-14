@@ -1,4 +1,4 @@
-package com.example.myapp.ui.home
+package com.example.myapp.ui.routine
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapp.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
+class RoutineFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
 
@@ -23,7 +23,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+            ViewModelProvider(this).get(RoutineViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
