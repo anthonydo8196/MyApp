@@ -1,4 +1,4 @@
-package com.example.myapp.ui.data
+package com.example.myapp.data
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -12,9 +12,8 @@ import androidx.room.Query
 interface EntryDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addUser(entry: Entry)
+    suspend fun addEntry(entry: Entry)
 
     @Query("SELECT * FROM entry_table ORDER BY id ASC")
-
     fun readAllData(): LiveData<List<Entry>>
 }
