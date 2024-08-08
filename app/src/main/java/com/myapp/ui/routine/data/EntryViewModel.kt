@@ -1,4 +1,4 @@
-package com.example.myapp.data
+package com.myapp.ui.routine.data
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

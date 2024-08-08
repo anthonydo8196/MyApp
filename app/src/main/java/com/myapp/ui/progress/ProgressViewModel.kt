@@ -1,13 +1,13 @@
-package com.example.myapp.ui.progress
+package com.myapp.ui.progress
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class ProgressFragment : ViewModel() {
+class ProgressViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
+        value = ""
     }
     val text: LiveData<String> = _text
 }
